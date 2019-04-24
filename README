@@ -1,5 +1,5 @@
 mutation{
-        addObject(objectname: “апартамент №1”, title: “апартамент”, area: “72”, price: “100000”, description: “на първи жилищен етаж, светъл, източно и западно изложение”, location: “гр.Пловдив, ул.Луна №101”){
+        addObject(objectname: “апартамент №1”, title: “house”, area: “72”, price: “100000”, description: “на първи жилищен етаж, светъл, източно и западно изложение”, location: “гр.Пловдив, ул.Луна №101”){
 _id
 objectname
 title
