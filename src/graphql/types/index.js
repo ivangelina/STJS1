@@ -1,8 +1,8 @@
 import {mergeTypes} from 'merge-graphql-schemas';
 import User from './user/';
-import Object from './object';
+import Building from './building/';
 import Game from './game/';
 
-const types = [User, Object, Game];
+const types = [User, Building, Game];
 
 export default mergeTypes(types, {all: true});
