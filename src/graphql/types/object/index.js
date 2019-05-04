@@ -1,8 +1,8 @@
 export default `
 
-    type Object {
+    type Building {
         _id: String!,
-        objectname: String!,
+        buildingname: String!,
         title: String!,
         area: String!,
         price: String!,
@@ -11,14 +11,14 @@ export default `
     }
 
     type Query {
-        object(_id: String!): Object
-        objects: [Object]
+        building(_id: String!): Building
+        buildings: [Building]
     }
 
     type Mutation {
-        addObject(objectname: String!, title: String!, area: String!, price: String!, description: String!, location: String!): Object
-        editObject(_id: String!, objectname: String, title: String!, area: String!, price: String!, description: String!, location: String!): Object
-        deleteObject(_id: String!): Object
+        addBuilding(buildingname: String!, title: String!, area: String!, price: String!, description: String!, location: String!): Building
+        editBuilding(_id: String!, buildingname: String, title: String!, area: String!, price: String!, description: String!, location: String!): Building
+        deleteBuilding(_id: String!): Building
     }
 
 `;
