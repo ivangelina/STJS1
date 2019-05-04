@@ -2,8 +2,8 @@ import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
-const ObjectSchema = new Schema({
-    objectname: {
+const BuildingSchema = new Schema({
+    buildingname: {
         type: String,
         required: true
     },
@@ -19,7 +19,7 @@ const ObjectSchema = new Schema({
         type: String,
         required: true
     },
-    decription: {
+    description: {
         type: String,
         required: true
     },
@@ -29,5 +29,5 @@ const ObjectSchema = new Schema({
     }
 })
 
-const Object = mongoose.model("Object", ObjectSchema);
-export default Object;
+const Building = mongoose.model("Building", BuildingSchema);
+export default Building;
