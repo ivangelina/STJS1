@@ -9,4 +9,17 @@ mutation{
 			location
 		}
   }
+  
+  query {
+      buildings {
+		  _id
+		  buildingsname,
+          title,
+		  area,
+		  price,
+		  description,
+		  location
+	  }
+  }
+
     
